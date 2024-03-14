@@ -21,8 +21,11 @@ If you're new to SageMaker, we recommend that you read [What is Amazon SageMake
 
 Follow the hyperlinks below to finish setting up the prerequisites for Sagemaker
 
--   [Create an AWS Account](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#gs-account)
--   [Create an Administrative User and Group](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#gs-account-user)
+-   [Create an AWS Account](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#gs-account) - This walks you through setting up an AWS account
+-   When you create an AWS account, you get a single sign-in identity that has complete access to all of the AWS services and resources in the account. This identity is called the AWS account root user.
+-   Signing in to the AWS console using the email address and password that you used to create the account gives you complete access to all of the AWS resources in your account. We strongly recommend that you not use the root user for everyday tasks, even the administrative ones.
+-   Instead, adhere to the Security best practices in [IAM](https://docs.aws.amazon.com/sagemaker/latest/dg/security-iam.html), and [Create an Administrative User and Group](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-set-up.html#gs-account-user). Then securely lock away the root user credentials and use them to perform only a few account and service management tasks.
+  
 
 Once you are done with the above steps, you can move on to the one below
 
