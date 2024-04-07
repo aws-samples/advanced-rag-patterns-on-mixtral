@@ -61,6 +61,8 @@ The quickest setup to run example notebooks includes:
 
 ## Contributing
 
+For any specific questions on how to contribute, please contact [armdiazg@amazon.com](https://www.linkedin.com/in/armando-diaz-47a498113/), [vijeasns@amazon.com](https://www.linkedin.com/in/niithiyn-vijeaswaran-451245213/), [bustils@amazon.com](https://www.linkedin.com/in/sebastian-bustillo/), [puniomp@amazon.com](https://www.linkedin.com/in/marcpunio/), [farsabir@amazon.com](https://www.linkedin.com/in/farooqsabir/), and [aboujid@amazon.com](https://www.linkedin.com/in/aj-dhimine-34a8b01ba/).
+
 We welcome community contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## Security
