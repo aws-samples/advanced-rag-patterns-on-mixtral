@@ -59,6 +59,108 @@ The quickest setup to run example notebooks includes:
 - Proper [IAM User and Role](http://docs.aws.amazon.com/sagemaker/latest/dg/authentication-and-access-control.html) setup
 - An [Amazon SageMaker Notebook Instance](http://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html)
 
+## Comparison of results
+---------------
+
+The following table compares results from different queries based on technique.
+
+|
+
+**Technique**
+
+ |
+
+           Regular Retriever Chain
+
+ |
+
+     Parent Document Retriever
+
+ |
+
+LLM Chain Extractor: Contextual Compression
+
+ |
+
+LLM Chain Filter: Contextual Compression
+
+ |
+|
+
+**  Query 1**
+
+How did AWS evolve?
+
+ |
+
+AWS (Amazon Web Services) evolved from an initially unprofitable investment to an $85B annual revenue run rate business with strong profitability, offering a wide range of services and features, and becoming a significant part of Amazon's portfolio. Despite facing skepticism and short-term headwinds, AWS continued to innovate, attract new customers, and migrate active customers, offering benefits such as agility, innovation, cost-efficiency, and security. AWS also expanded its long-term investments, including chip development, to provide new capabilities and change what's possible for its customers.
+
+ |
+
+AWS (Amazon Web Services) started with a feature-poor initial launch of the Elastic Compute Cloud (EC2) service in 2006, providing only one instance size, in one data center, in one region of the world, with Linux operating system instances only, and without many key features like monitoring, load balancing, auto-scaling, or persistent storage. However, AWS's success allowed them to quickly iterate and add the missing capabilities, eventually expanding to offer various flavors, sizes, and optimizations of compute, storage, and networking, as well as developing their own chips (Graviton) to push price and performance further. AWS's iterative innovation process required significant investments in financial and people resources over 20 years, often well in advance of when it would pay out, to meet customer needs and improve long-term customer experiences, loyalty, and returns for shareholders.
+
+ |
+
+AWS evolved by starting as a small project inside Amazon, requiring significant capital investment and facing skepticism from both inside and outside the company. However, AWS had a head start on potential competitors and believed in the value it could bring to customers and Amazon. AWS made a long-term commitment to continue investing, resulting in over 3,300 new features and services launched in 2022. AWS has transformed how customers manage their technology infrastructure and has become an $85B annual revenue run rate business with strong profitability. AWS has also continuously improved its offerings, such as enhancing EC2 with additional features and services after its initial launch.
+
+ |
+
+AWS (Amazon Web Services) evolved by initially launching feature-poor but iterating quickly based on customer feedback to add necessary capabilities. This approach allowed AWS to launch EC2 in 2006 with limited features and then continuously add new functionalities, such as additional instance sizes, data centers, regions, operating system options, monitoring tools, load balancing, auto-scaling, and persistent storage. Over time, AWS transformed from a feature-poor service to a multi-billion-dollar business by focusing on customer needs, agility, innovation, cost-efficiency, and security. AWS now has an $85B annual revenue run rate and offers over 3,300 new features and services each year, catering to a wide range of customers from start-ups to multinational companies and public sector organizations.
+
+ |
+|
+
+Why is Amazon successful?
+
+ |
+
+Amazon is successful due to its continuous innovation and expansion into new areas such as technology infrastructure services, digital reading devices, voice-driven personal assistants, and new business models like the third-party marketplace. Its ability to scale operations quickly, as seen in the rapid expansion of its fulfillment and transportation networks, also contributes to its success. Additionally, Amazon's focus on optimization and efficiency gains in its processes has resulted in productivity improvements and cost reductions. The example of Amazon Business highlights the company's capability to leverage its e-commerce and logistics strengths in different sectors.
+
+ |
+
+Amazon is successful due to its ability to constantly innovate, adapt to changing market conditions, and meet customer needs in various market segments. This is evident in the success of Amazon Business, which has grown to drive roughly $35B in annualized gross sales by delivering selection, value, and convenience to business customers. Amazon's investments in ecommerce and logistics capabilities have also enabled the creation of services like Buy with Prime, which helps merchants with direct-to-consumer websites drive conversion from views to purchases.
+
+ |
+
+Based on the provided context, Amazon's success can be attributed to its strategic expansion from a book-selling platform to a global marketplace with a vibrant third-party seller ecosystem, early investment in AWS, innovation in introducing the Kindle and Alexa, and substantial growth in annual revenue from 2019 to 2022. This growth led to the expansion of the fulfillment center footprint, creation of a last-mile transportation network, and building a new sortation center network, which were optimized for productivity and cost reductions.
+
+ |
+
+Amazon is successful due to its innovative business models, continuous technological advancements, and strategic organizational changes. The company has consistently disrupted traditional industries by introducing new ideas, such as an ecommerce platform for various products and services, a third-party marketplace, cloud infrastructure services (AWS), the Kindle e-reader, and the Alexa voice-driven personal assistant. Additionally, Amazon has made structural changes to improve its efficiency, such as reorganizing its US fulfillment network to decrease costs and delivery times, further contributing to its success.
+
+ |
+|
+
+Comparison
+
+ |
+
+- Based on the responses from the Regular Retriever Chain, we notice that although it provides long winded answers, it suffers from context overflow and fails to mention any significant details from the corpus in regards to responding to the query provided.
+
+- The regular retrieval chain is not able to capture the nuances with depth or contextual insight, potentially missing critical aspects of the document.
+
+ |
+
+- The Parent Document Retriever delves deeper into the specifics of AWS's growth strategy, including the iterative process of adding new features based on customer feedback and the detailed journey from a feature-poor initial launch to a dominant market position, all while providing a context rich response.
+
+- Responses cover a wide range of aspects, from technical innovations and market strategy to organizational efficiency and customer focus, providing a holistic view of the factors contributing to success along with examples. This can be attributed to PDR's targeted yet broad-ranging search capabilities.
+
+ |
+
+- The LLM Chain Extractor maintains a balance between covering key points comprehensively and avoiding unnecessary depth.
+
+- Dynamically adjusts to the query's context, ensuring the output is directly relevant and comprehensive.
+
+ |
+
+Similar to the LLM Chain Extractor, the LLM Chain Filter ensures that while the key points are covered , the output is efficient for customers looking for concise and contextual answers.
+
+ |
+
+Upon comparing these different techniques, we can see that in contexts like detailing AWS's transition from a simple service to a complex, multi-billion-dollar entity, or explaining Amazon's strategic successes, the regular retriever chain lacks the precision the more sophisticated techniques offer, leading to less targeted information. Although quite a few differences are visible between the advanced techniques discussed, they are by far more informative than regular retriever chains.
+
+For customers in industries such as healthcare, telecommunications, and financial services who are looking to implement RAG in their applications, the limitations of the regular retriever chain in providing precision, avoiding redundancy, and effectively compressing information make it less suited to fulfilling these needs compared to the more advanced parent document retriever and contextual compression techniques. These techniques are able to distill vast amounts of information into the concentrated, impactful insights that you need, while helping improve price-performance.
+
 ## Contributing
 
 For any specific questions on how to contribute, please contact [armdiazg@amazon.com](https://www.linkedin.com/in/armando-diaz-47a498113/), [vijeasns@amazon.com](https://www.linkedin.com/in/niithiyn-vijeaswaran-451245213/), [bustils@amazon.com](https://www.linkedin.com/in/sebastian-bustillo/), [puniomp@amazon.com](https://www.linkedin.com/in/marcpunio/), [farsabir@amazon.com](https://www.linkedin.com/in/farooqsabir/), and [aboujid@amazon.com](https://www.linkedin.com/in/aj-dhimine-34a8b01ba/).
